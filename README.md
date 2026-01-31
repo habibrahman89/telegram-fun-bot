@@ -1,2 +1,2 @@
-# telegram_bot
+# telegram_fun_bot
 Telegram Bot
