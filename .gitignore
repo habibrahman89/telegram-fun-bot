@@ -1,7 +1,6 @@
 venv/
 ffmpeg/
 music/
-bot.db
+*.db
 __pycache__/
-*.pyc
 .env
