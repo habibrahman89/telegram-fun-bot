@@ -1,0 +1,38 @@
+telegram_fun_bot/
+│
+├── bot.py
+├── config.py
+├── requirements.txt
+│
+├── handlers/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── fun.py
+│   ├── quiz.py
+│   └── welcome.py
+│
+├── services/
+│   └── quiz_data.py
+│
+├── utils/
+│   ├── permissions.py
+│   └── images.py
+│
+├── assets/
+│   ├── welcome_bg.png
+│   └── font.ttf
+
+
+telegram_fun_bot/
+├── handlers/
+│   └── music.py        ← NEW
+├── services/
+│   └── music_queue.py ← NEW
+└── bot.py              ← MODIFIED (register music)
+
+
+telegram_fun_bot/
+├── handlers/
+│   └── music.py   ← MODIFY
+└── services/
+    └── music_queue.py (unchanged)
