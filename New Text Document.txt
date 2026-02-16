@@ -36,3 +36,11 @@ telegram_fun_bot/
 │   └── music.py   ← MODIFY
 └── services/
     └── music_queue.py (unchanged)
+
+git add .
+git commit -m "Fix queue bug"
+git push origin main
+
+git add .
+git commit -m "message"
+git push origin main

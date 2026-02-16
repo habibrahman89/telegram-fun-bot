@@ -140,17 +140,15 @@ async def play(update, context):
 async def send_next_song(update, context):
     chat_id = update.effective_chat.id
 
+    # Reset playing state
+    NOW_PLAYING.discard(chat_id)
+
     query = pop_from_queue(chat_id)
 
     if not query:
-        NOW_PLAYING.discard(chat_id)
-        return
-    
-    if chat_id in NOW_PLAYING:
         return
 
     NOW_PLAYING.add(chat_id)
-
 
     loop = asyncio.get_event_loop()
 
@@ -161,7 +159,7 @@ async def send_next_song(update, context):
 
         await context.bot.send_message(
             chat_id=chat_id,
-            text=f"▶️ Now Playing: {query}\n\n🎧 Listen here:\n{url}",
+            text=f"▶️ Now Playing: {query}\n\n🎧 {url}",
             reply_markup=music_controls()
         )
 
