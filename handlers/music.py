@@ -68,7 +68,6 @@ ydl_opts = {
     "nocheckcertificate": True,
     "geo_bypass": True,
 
-    "ffmpeg_location": r"C:\ffmpeg\bin",
 
     "user_agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
